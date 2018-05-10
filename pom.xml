@@ -6,7 +6,31 @@
 
     <groupId>com.github.frameworkium</groupId>
     <artifactId>frameworkium-api</artifactId>
-    <version>0.9</version>
+    <version>3.0-BETA1</version>
+    <name>frameworkium-api</name>
+    <description>
+        Lightweight Frameworkium project providing API testing functionality
+    </description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.github.frameworkium</groupId>
+            <artifactId>frameworkium-base</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>3.0.7</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>23.1-jre</version>
+        </dependency>
+    </dependencies>
+
+
     <build>
         <plugins>
             <plugin>
@@ -20,29 +44,6 @@
         </plugins>
     </build>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.github.frameworkium</groupId>
-            <artifactId>frameworkium-base</artifactId>
-            <version>1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>io.rest-assured</groupId>
-            <artifactId>rest-assured</artifactId>
-            <version>3.0.7</version>
-            <!--<exclusions>-->
-                <!--<exclusion>-->
-                    <!--<groupId>org.codehaus.groovy</groupId>-->
-                    <!--<artifactId>groovy</artifactId>-->
-                <!--</exclusion>-->
-            <!--</exclusions>-->
-        </dependency>
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>23.1-jre</version>
-        </dependency>
-    </dependencies>
 
 
 </project>
