@@ -12,17 +12,12 @@ install: true # disable default mvn install
 
 env:
   global:
-    - CAPTURE_URL="http://ec2-35-176-47-3.eu-west-2.compute.amazonaws.com"
     - SUT_NAME="frameworkium-api"
     - SUT_VERSION=${TRAVIS_BRANCH}
     # override Travis default to give browsers more room
     - _JAVA_OPTIONS="-Xmx1024m -Xms128m"
-    # Required to turn on workaround for the following issue:
-    # https://github.com/travis-ci/travis-ci/issues/8836
 
-before_script:
-  # Set up Selenium Grid Hub
 
 script:
   # Download deps, compile and run checkstyle
-  - mvn install -B --quiet --show-version -DskipTests=true -Dmaven.javadoc.skip=true
+  - mvn clean install --show-version -DskipTests=true -Dmaven.javadoc.skip=true
