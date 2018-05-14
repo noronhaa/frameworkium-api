@@ -21,4 +21,6 @@ This is one of the Frameworkium 3 libraries. Frameworkium 3 is a new release of 
 
 frameworkium-api contains the RestAssured API library for use with API testing
 
-see [frameworkium-examples](https://github.com/Frameworkium/frameworkium-examples/tree/frameworkium3) for an example project making us of frameworkium-api
+See [frameworkium-examples](https://github.com/Frameworkium/frameworkium-examples/tree/frameworkium3) for an example project making us of frameworkium-api
+
+See [RestAssured docs](https://github.com/rest-assured/rest-assured/wiki/Usage) for use in depth guide for the Rest Assured library
