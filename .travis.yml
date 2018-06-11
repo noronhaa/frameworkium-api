@@ -7,8 +7,8 @@ dist: trusty
 
 install: true # disable default mvn install
 
-#notifications:
-#  slack: qaengineering:eTRqy0JhQOUtKHNO8mKLc8NC
+notifications:
+  slack: qaengineering:eTRqy0JhQOUtKHNO8mKLc8NC
 
 env:
   global:
@@ -21,3 +21,6 @@ env:
 script:
   # Download deps, compile and run checkstyle
   - mvn clean install --show-version -DskipTests=true -Dmaven.javadoc.skip=true
+
+  #Run Tests
+  - mvn clean install --show-version -Dmaven.javadoc.skip=true
