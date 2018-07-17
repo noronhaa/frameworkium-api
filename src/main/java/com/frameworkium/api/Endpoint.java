@@ -3,8 +3,7 @@ package com.frameworkium.api;
 /**
  * Intended for an enum to store the various endpoints of your API under test.
  *
- * The following is an example implementation:
- *
+ * <p>The following is an example implementation:
  * <pre>
  * {@code
  * public enum MyEndpoint implements Endpoint {
@@ -25,7 +24,7 @@ package com.frameworkium.api;
  *  }}
  *  </pre>
  *
- * The key feature is an enum entry for each endpoint where the url String can
+ * <p>The key feature is an enum entry for each endpoint where the url String can
  * contain a {@code String.format} to enable easy injection of parameters.
  */
 public interface Endpoint {
