@@ -4,7 +4,9 @@
 [![codecov.io][codecov-svg]][codecov]
 [![Maintainability][cc-badge]][codeclimate]
 
-This is the API module Frameworkium 3.
+This is the Frameworkium 3 API module.
+
+It contains code to provide structure to (REST) API tests.
 
 ## Frameworkium 3
 
