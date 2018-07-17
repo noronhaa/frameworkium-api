@@ -56,7 +56,7 @@ public abstract class BaseService {
      * @return The response from the request
      */
     protected ExtractableResponse request(String url) {
-        return request(ImmutableMap.<String, Object>of(), url);
+        return request(ImmutableMap.of(), url);
     }
 
     /**
