@@ -8,19 +8,10 @@ dist: trusty
 install: true # disable default mvn install
 
 notifications:
-  slack: qaengineering:eTRqy0JhQOUtKHNO8mKLc8NC
-
-env:
-  global:
-    - SUT_NAME="frameworkium-api"
-    - SUT_VERSION=${TRAVIS_BRANCH}
-    # override Travis default to give browsers more room
-    - _JAVA_OPTIONS="-Xmx1024m -Xms128m"
-
+  slack:
+    rooms:
+      secure: xRV44kstvEqpXKZxgbPWTQox9KT4LmCdZRJ7ogkHXeENYsuGnt+ewVSID738x6pqrsahktpCDkDeqPj5QSqzJBDHkZLLWnY/A0TIno63qzeRiRZhwSs7ExNFasQq++lNt9qE+PEHoPhHQzeGCsxHeLrVEY+/X9yoapC1wcSMLp4Tk9PlLyQxh+EtQgCk0SWtzBV4yEfPpUkwUs2JRb9tqFvuQKXuJZa5wi3IsBUjo/LxdLhnT0QLmdXBA1FTsNoCB+QIuVPN9/TqKw4eoN79y2yiiacZWhCV9kwx8lV0DImZ5Yb6VkgGYJDLTz19HR58aHVkS8ZVkHMk2kvMZmQn7+iuWJYO7hJbLuUP8hdfAkXkrxMn0GMcDk4nPIJVzfUBdPhY7LbDZNvp32XuYP3bSwtO2JXn8+tTZrMLIu0c4s9QH8q5MMRiRBOactuinduqb+250cTzHVCnZdlzV2CVqYgz3Dp0nSuu6BUbVMUgii2mjir4w9rCcw3wkCswUGXzYuW+i53FQJ6idQKZ6dsFPLUDiPpxnCVaWFcJ7m0r97K+SUtbdIBTyTpNF2pt0eLGW2Svku0goNOWv7K4V+utsFStY0qZBArdh+2T98mOT54DEJxBBA8hlUCSKKUlyCTDDj5QZ/6xgkV5jUZ58YOFMCNavD8Fum5nCOeIm6yBNMk=
 
 script:
-  # Download deps, compile and run checkstyle
-  - mvn clean install --show-version -DskipTests=true -Dmaven.javadoc.skip=true
-
-  #Run Tests
+  # Download deps, compile and run checkstyle and tests
   - mvn clean install --show-version -Dmaven.javadoc.skip=true
