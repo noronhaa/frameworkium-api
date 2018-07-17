@@ -1,5 +1,33 @@
 package com.frameworkium.api;
 
+/**
+ * Intended for an enum to store the various endpoints of your API under test.
+ *
+ * The following is an example implementation:
+ *
+ * <pre>
+ * {@code
+ * public enum MyEndpoint implements Endpoint {
+ *
+ *     BASE_URI("https://xxx),
+ *     YYY_ID("/yyy/%d");
+ *
+ *     private String url;
+ *
+ *     MyEndpoint(String url) {
+ *         this.url = url;
+ *     }
+ *
+ *    @literal @Override
+ *     public String getUrl(Object... params) {
+ *         return String.format(url, params);
+ *     }
+ *  }}
+ *  </pre>
+ *
+ * The key feature is an enum entry for each endpoint where the url String can
+ * contain a {@code String.format} to enable easy injection of parameters.
+ */
 public interface Endpoint {
 
     /**
