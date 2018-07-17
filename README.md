@@ -1,26 +1,37 @@
-# frameworkium-api - Docs WIP
+# Frameworkium API
 
-### Frameworkium 3
+This is the API module Frameworkium 3.
 
-This is one of the Frameworkium 3 libraries. Frameworkium 3 is a new release of [frameworkium-core](https://github.com/Frameworkium/frameworkium-core) aka Frameworkium 2.
- In Frameworkium 3 we have split the project up into their own logical modules that can be used independently of the other modules. 
+## Frameworkium 3
+
+Frameworkium 3 is a re-organisation of the original [frameworkium-core][core] aka Frameworkium 2.
+
+Frameworkium 3 splits the project up into logical modules that can be used largely independently. 
  
- Original Framewokium 2 docs [here]()
+### Frameworkium 3 modules
+
+ 1. [frameworkium-ui][ui]
+ 2. [frameworkium-api][api]
+ 3. [frameworkium-reporting][reporting]
+ 4. [frameworkium-jira][jira]  
  
- Frameworkium 3 libraries:
- 1. [frameworkium-ui](https://github.com/Frameworkium/frameworkium-ui)
- 2. [frameworkium-api](https://github.com/Frameworkium/frameworkium-api)
- 3. [frameworkium-reporting](https://github.com/Frameworkium/frameworkium-reporting)
- 4. [frameworkium-jira](https://github.com/Frameworkium/frameworkium-jira)  
+### Example Projects
+
+ - [frameworkium-examples][examples]
+ - [frameworkium-bdd][bdd]
  
- Example Projects implementing Frameworkium 3:
- - [frameworkium-examples](https://github.com/Frameworkium/frameworkium-examples/tree/frameworkium3)
- - [frameworkium-bdd](https://github.com/Frameworkium/frameworkium-bdd/tree/frameworkium3)
+### Rest Assured
 
-***
+`frameworkium-api` includes the [RestAssured][ra] library for interacting with HTTP APIs.
 
-frameworkium-api contains the RestAssured API library for use with API testing
+See the [RestAssured docs][ra-docs] for an in-depth guide for the Rest Assured library.
 
-See [frameworkium-examples](https://github.com/Frameworkium/frameworkium-examples/tree/frameworkium3) for an example project making us of frameworkium-api
-
-See [RestAssured docs](https://github.com/rest-assured/rest-assured/wiki/Usage) for use in depth guide for the Rest Assured library
+[core]: https://github.com/Frameworkium/frameworkium-core
+[ui]: https://github.com/Frameworkium/frameworkium-ui
+[api]: https://github.com/Frameworkium/frameworkium-api
+[reporting]: https://github.com/Frameworkium/frameworkium-reporting
+[jira]: https://github.com/Frameworkium/frameworkium-jira
+[examples]: https://github.com/Frameworkium/frameworkium-examples/tree/frameworkium3
+[bdd]: https://github.com/Frameworkium/frameworkium-bdd/tree/frameworkium3
+[ra-docs]: https://github.com/rest-assured/rest-assured/wiki/Usage
+[ra]: https://github.com/rest-assured/rest-assured/
