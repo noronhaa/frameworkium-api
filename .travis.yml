@@ -14,4 +14,4 @@ notifications:
 
 script:
   # Download deps, compile and run checkstyle and tests
-  - mvn clean install --show-version -Dmaven.javadoc.skip=true
+  - mvn clean install -Dthreads=2 --show-version -Dmaven.javadoc.skip=true
