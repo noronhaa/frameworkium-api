@@ -8,7 +8,7 @@ Frameworkium 3 is a re-organisation of the original [frameworkium-core][core] ak
 
 Frameworkium 3 splits the project up into logical modules that can be used largely independently. 
  
-### Frameworkium 3 modules
+### Frameworkium 3 Modules
 
  1. [frameworkium-ui][ui]
  2. [frameworkium-api][api]

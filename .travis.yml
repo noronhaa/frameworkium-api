@@ -15,3 +15,7 @@ notifications:
 script:
   # Download deps, compile and run checkstyle and tests
   - mvn clean install -Dthreads=2 --show-version -Dmaven.javadoc.skip=true
+
+after_script:
+  # Code coverage report
+  - bash <(curl -s https://codecov.io/bash)
