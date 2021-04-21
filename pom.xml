@@ -35,9 +35,9 @@
 
   <dependencies>
     <dependency>
-      <groupId>com.github.frameworkium</groupId>
+      <groupId>com.github.noronhaa</groupId>
       <artifactId>frameworkium-base</artifactId>
-      <version>3.0-BETA2</version>
+      <version>3.0-BETA3</version>
     </dependency>
     <dependency>
       <groupId>io.rest-assured</groupId>
